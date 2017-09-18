@@ -1,0 +1,29 @@
+header {
+    padding-top: 1em;
+    background-color: tomato;
+    height: 10vh;
+    text-align: center;
+    font-size: 900;
+    border: 2px solid black;  
+}
+#setboard{
+    width: 80%;
+    padding-left: 2em; 
+    border: 2px solid black;  
+}
+
+.main {   
+    background-color: skyblue;   
+}
+
+.aside-1 {    
+    background-color: greenyellow;
+    border: 4px solid black;
+    
+}
+table, th, td {
+    border: 2px solid black;
+    
+}
+
+
