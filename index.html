@@ -1,0 +1,125 @@
+<!doctype html>
+<html manifest="index.appcache">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Designs</title>
+        <link rel="stylesheet" href="css/score.css">
+    </head>
+    <body>
+                
+        
+        <div>
+            <header>VOLLEY LIVE SCORE</header>
+            <section class="main">
+            
+                
+            <table id="setboard"> 
+            <tr>
+                <th id="logoa"><canvas id="canvasA"></canvas></th>
+                <th id="logob"><canvas id="canvasB"></canvas></th>
+            </tr>
+            
+            <tr>
+                <th id="ta_title">Team A</th>
+                <th id="tb_title">Team B</th>
+                <th>Set</th>
+            </tr>            
+            <tr>
+                <td id="t1_points">-</td>
+                <td id="t2_points">-</td>
+                <td id="nSet" value="0">-</td>     
+            </tr>                      
+            </table>               
+                
+            <table>
+            <tr>
+                <th>Teams</th>
+                <th>Set 1</th>
+                <th>Set 2</th>
+                <th>Set 3</th>
+                <th>Set 4</th>
+                <th>Set 5</th>
+                <th>Score</th>
+            </tr>          
+            <tr>
+                <th id="t1name">Team A</th>
+                <td id="t1_points_set1"></td>
+                <td id="t1_points_set2" ></td>
+                <td id="t1_points_set3"></td>
+                <td id="t1_points_set4"></td>
+                <td id="t1_points_set5"></td>
+                <td id="set_t1" value="0"></td>
+            </tr>
+            <tr>
+                <th id=t2name>Team B</th>
+                <td id="t2_points_set1"></td>
+                <td id="t2_points_set2"></td>
+                <td id="t2_points_set3"></td>
+                <td id="t2_points_set4"></td>
+                <td id="t2_points_set5"></td>
+                <td id="set_t2" value="0"></td>
+            </tr>
+            </table>
+            
+            <table>
+             <tr>
+                <th id="t1time">Team A-Timeout</th>
+                <th id="ttime">Technical Timeout</th>
+                <th id="t2time">Team B-Timeout</th>
+            </tr>            
+            <tr>
+                <td id="t1time_counter">-</td>
+                <td id="ttime_counter">-</td>
+                <td id="t2time_counter">-</td>              
+            </tr> 
+            </table>           
+
+            <div>            
+            <div id="timer"class="timer"></div> 
+            <div id="to_owner"class="to_owner"></div>   
+            </div>     
+                
+            </section>
+        </div>
+            
+        <aside class="aside aside-1">
+            
+            <strong>Teams Control Menu</strong>
+            <div>Team A
+                <input type="button" id="taRem" value="-">
+                <input type="button" id="taAdd" value="+">            
+                <input type="button" id="callTimeOutA" value="timeout">    
+            </div>
+
+            <div>Team B
+                <input type="button" id="tbRem" value="-">
+                <input type="button" id="tbAdd" value="+">     
+                 <input type="button" id="callTimeOutB" value="timeout">   
+            </div>
+
+            <div>
+                <strong>Game Menu</strong>
+                <input type="button" id="newGame" value="New Game">
+                <input type="button" id="clearGame"  value="Clear">
+                <input type="text"id="team1" placeholder="Team A">
+                <input type="text" id="team2" placeholder="Team B">
+            </div>        
+
+            <div>
+                <strong>Logo Menu</strong>
+                <button id="startbuttonA">Logo A</button>
+                <button id="startbuttonB">Logo B</button>
+                <button id="clearLogo">Clear Logo</button>
+                <!--<script src=js/photo.js></script>   -->
+            </div>   
+                 
+        </aside>
+        
+    <video id="video"></video>        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/score.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?language=el-GR"></script>
+    *Photo the logo of teams first for best use of apps
+    </body>
+</html>
